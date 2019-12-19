@@ -17,7 +17,7 @@
     overflow: hidden;
     background-color: #0d52bf;
     position: fixed;
-    text-align: center;
+    float: left;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,11 +27,38 @@
     text-decoration: none;
     font-size: 50px;
     color: black;
-    display:inline;
+    display: inline;
     font-family: Quality;
+  }
+  .menubarText {
+    font-size: 50px;
   }
   body {
     background-color: #4287f5;
+  }
+  .exampleText {
+    font-size: 50px;
+    margin-top: 5%;
+    text-align: center;
+    font-family: Quality;
+  }
+  .info {
+    overflow: hidden;
+    background-color: #0d52bf;
+    position: fixed;
+    float: left;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    font-size: 30px;
+    text-align: center;
+    font-family: Quality;
+  }
+  .infoText {
+    font-size: 20px;
+    font-family: Quality;
+    text-align: center;
   }
   </style>
 
@@ -41,10 +68,35 @@
 
       <a href = "index.html"> <img src = "images/header.png" style = "float: left; margin-top: -30px; margin-left: -90px;"> </a>
 
-      <a href = "index.html"> Main site </a>
-      <a href = "games.html"> Games </a>
-      <a href = "sites.html"> Sites </a>
-      <a href = "contact.html"> Contact </a>
+      <div class = "menubarText">
+
+        <a href = "index.html"> Main site </a>
+        <nobr> | </nobr>
+        <a href = "games.html"> Games </a>
+        <nobr> | </nobr>
+        <a href = "sites.html"> Sites </a>
+        <nobr> | </nobr>
+        <a href = "contact.html"> Contact </a>
+
+      </div>
+
+    </div>
+
+    <div class = "exampleText">
+
+      <p> Welcome ! </p>
+
+    </div>
+
+    <div class = "info">
+
+      <p style = "margin-top: -5px;"> Informations <p>
+
+        <div class = "infoText" style = "margin-top: -30px;">
+
+          <p> e-mail : konradartymiak7@gmail.com
+
+        </div>
 
     </div>
 
