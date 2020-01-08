@@ -38,9 +38,10 @@
   body {
     background-color: #4287f5;
   }
-  .animatedText {
+  .projectHeader {
     font-size: 50px;
     margin-top: 5%;
+    top: 0;
     text-align: center;
     font-family: Quality;
     animation-name: popup;
@@ -49,6 +50,20 @@
   @keyframes popup {
     from {font-size: 1px; color: #4287f5;}
     to {font-size: 50px; color: black;}
+  }
+    .projectText {
+      font-size: 30px;
+      margin-top: 5%;
+      top: 0;
+      text-align: center;
+      font-family: Quality;
+      animation-name: popupText;
+      animation-duration: 3s;
+      opacity: 1;
+    }
+  @keyframes popupText {
+      from {opacity: 0;}
+      to {opacity: 1;}
   }
   .info {
     overflow: hidden;
@@ -67,6 +82,17 @@
     font-size: 20px;
     font-family: Quality;
     text-align: center;
+  }
+  .screenshoots {
+    width: 40%;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;
   }
   </style>
 
@@ -88,27 +114,46 @@
 
     </div>
 
-    <div class = "animatedText">
+    <div class = "projectHeader">
 
-      <p> Welcome to my portfolio ! </p>
+      <p> It's my first game </p>
 
     </div>
 
-    <div class = "animatedText">
+    <div class = "projectText" style = "margin-left: 30%; margin-right: 30%;">
 
-      <p> My first game : </p>
+      <p>
+        The game is created by one person (Me). All models for example Furnitures
+         or Zombies are created also by me. I hope that You will be enjoyed :D <br> Here is a few screenshoots :
+      </p>
 
-      <a href = "DontBecomeAZombie.html"> <img src = "images/thumbnail.png" style = "text-align: center; width: 20%; border-radius: 10px; border-style: solid; border-width: 3px; border-color: red;" class = "center"> </a>
+    </div>
+
+    <div>
+
+      <img src = "images/ss.png" class = "screenshoots">
+
+      <img src = "images/ss2.png" class = "screenshoots">
+
+      <img src = "images/ss3.png" class = "screenshoots">
+
+    </div>
+
+    <div class = "projectText" style = "margin-left: 30%; margin-right: 30%; margin-bottom: 10%;">
+
+      <p> Here You can download my game : </p>
+
+      <a href = "https://gamejolt.com/games/misticwatermelon/461289"> <p style = "text-decoration: none;"> Here ! </p> </a>
 
     </div>
 
     <div class = "info">
 
-      <p style = "margin-top: -5px;"> Informations <p>
+      <p style = "margin-top: -5px;"> Informations </p>
 
         <div class = "infoText" style = "margin-top: -30px;">
 
-          <p> e-mail : konradartymiak7@gmail.com
+          <p> e-mail : konradartymiak7@gmail.com </p>
 
         </div>
 
