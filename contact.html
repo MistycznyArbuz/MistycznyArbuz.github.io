@@ -38,7 +38,7 @@
   body {
     background-color: #4287f5;
   }
-  .exampleText {
+  .headerText {
     font-size: 50px;
     margin-top: 5%;
     top: 0;
@@ -50,6 +50,19 @@
   @keyframes popup {
     from {font-size: 1px; color: #4287f5;}
     to {font-size: 50px; color: black;}
+  }
+  .contactText {
+    font-size: 30px;
+    margin-top: 5%;
+    top: 0;
+    text-align: center;
+    font-family: Quality;
+    animation-name: popupContact;
+    animation-duration: 1s;
+  }
+  @keyframes popupContact {
+    from {font-size: 1px; color: #4287f5;}
+    to {font-size: 30px; color: black;}
   }
   .info {
     overflow: hidden;
@@ -68,6 +81,9 @@
     font-size: 20px;
     font-family: Quality;
     text-align: center;
+  }
+  .textbox {
+    height: 150px;
   }
   </style>
 
@@ -89,9 +105,27 @@
 
     </div>
 
-    <div class = "exampleText">
+    <div class = "headerText">
 
       <p> Do You want to contact with me ? </p>
+
+    </div>
+
+    <div class = "contactText">
+
+      <p> Here is a contact blank : </p>
+
+      <form action = "contactForm.php" method = "POST">
+
+        <input type = "email" name = "mail" placeholder = "Your e-mail..."> <br>
+
+        <input type = "text" name = "nick" placeholder = "Your nickname" maxlength = "16"> <br>
+
+        <input class = "textbox" type = "text" name = "content" placeholder = "Write a message here..." size = "50" height = "5" maxlength = "480"> <br>
+
+        <input type = "submit" name = "submit" value = "Submit">
+
+      </form>
 
     </div>
 
